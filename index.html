@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QR Selfies</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h2>Subí tu selfie</h2>
+
+    <label for="fileInput" class="btn">Seleccionar imágenes</label>
+    <input type="file" id="fileInput" accept="image/*" multiple />
+
+    <div id="previewContainer"></div>
+
+    <div id="loadingContainer" class="loading-container">
+      <div id="progressBar" class="progress-bar"></div>
+    </div>
+
+    <button id="uploadBtn">Subir</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
